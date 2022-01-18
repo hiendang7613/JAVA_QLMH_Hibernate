@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/HibernateMapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="MyDB" name="pojo.Account" table="USER_ACCOUNT">
+    <id name="username" type="string">
+      <column length="20" name="USERNAMEE"/>
+    </id>
+
+    <property name="password" type="string">
+      <column length="20" name="PASSWORDD"/>
+    </property>
+	
+	<property name="isGiaovu" type="boolean">
+      <column name="ISGIAOVU"/>
+    </property>
+	
+	<property name="studentID" type="string">
+      <column length="8" name="STUDENTID"/>
+    </property>
+
+  </class>
+</hibernate-mapping>

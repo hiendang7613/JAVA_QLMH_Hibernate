@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/HibernateMapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="MyDB" name="pojo.Student" table="STUDENT">
+    <id name="studentID" type="string">
+      <column length="8" name="STUDENTID"/>
+    </id>
+
+    <property name="name" type="string">
+      <column length="20" name="NAMEE"/>
+    </property>
+    <property name="gender" type="string">
+      <column length="3" name="GENDER"/>
+    </property>
+    <property name="iD" type="string">
+      <column length="9" name="ID"/>
+    </property>
+    <property name="classID" type="string">
+      <column length="5" name="CLASSID"/>
+    </property>
+
+  </class>
+</hibernate-mapping>
+

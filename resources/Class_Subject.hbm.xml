@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/HibernateMapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class catalog="MyDB" name="pojo.Class_Subject" table="CLASS_SUBJECT">
+    <composite-id>
+      <key-property name="classID"  type="string" column="CLASSID" length="5"/> 
+      <key-property name="subjectID"  type="string" column="SUBJECTID" length="6"/>
+    </composite-id>
+
+    <property name="classRoom" type="string">
+      <column length="3" name="CLASSROOM"/>
+    </property>
+ 
+  </class>
+</hibernate-mapping>
